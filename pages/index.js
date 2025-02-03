@@ -1,5 +1,4 @@
 import PredictionCard from '../components/PredictionCard';
-import SortingLabels from '../components/SortingLabels';
 import FeaturedPrediction from '../components/FeaturedPrediction';
 
 const SAMPLE_PREDICTIONS = [
@@ -64,7 +63,6 @@ const SAMPLE_PREDICTIONS = [
 export default function Home() {
   return (
     <>
-      <SortingLabels />
       <FeaturedPrediction prediction={SAMPLE_PREDICTIONS[0]} />
       
       <div className="container mx-auto px-4 py-8">
