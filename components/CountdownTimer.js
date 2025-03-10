@@ -26,17 +26,13 @@ export default function CountdownTimer({ endTime }) {
       }
     };
 
-    // Initial calculation
     calculateTimeLeft();
     
-    // Update every second
     const timer = setInterval(calculateTimeLeft, 1000);
 
-    // Cleanup
     return () => clearInterval(timer);
   }, [endTime]);
 
-  // Add leading zeros for better formatting
   const formatNumber = (num) => String(num).padStart(2, '0');
 
   return (

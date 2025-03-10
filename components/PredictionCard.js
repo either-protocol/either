@@ -43,7 +43,7 @@ export default function PredictionCard({
 
   return (
     <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100 text-black">
-      {/* Header */}
+
       <div className="flex gap-4 mb-4">
         <div className="w-12 h-12 relative rounded-lg overflow-hidden flex-shrink-0">
           <Image
@@ -63,7 +63,6 @@ export default function PredictionCard({
         </div>
       </div>
 
-      {/* Teams and Percentages */}
       <div className="mb-4">
         <div className="flex justify-between items-center mb-2">
           <div className="flex items-center gap-2">
@@ -76,16 +75,14 @@ export default function PredictionCard({
           </div>
         </div>
         
-        {/* Progress Bar */}
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
           <div 
-            className="h-full bg-indigo-500"
+            className="h-full bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-400"
             style={{ width: `${teamAPercentage || yesPercentage}%` }}
           />
         </div>
       </div>
 
-      {/* Order Input */}
       {isOrdering ? (
         <div className="space-y-3">
           <div className="flex items-center gap-2">
@@ -114,7 +111,7 @@ export default function PredictionCard({
           </div>
         </div>
       ) : (
-        /* Team Selection Buttons */
+
         <div className="flex gap-2 text-sm">
           <button
             onClick={() => handleTeamSelect(teamA)}
@@ -131,7 +128,6 @@ export default function PredictionCard({
         </div>
       )}
 
-      {/* Winnings Info */}
       <div className="flex flex-col gap-1 mt-4 text-sm text-gray-500">
         <div>Your shares: {teamA || "Yes"} - {teamAShares || yesPercentage}, {teamB || "No"} - {teamBShares || noPercentage}</div>
         <div>Winnings:</div>
