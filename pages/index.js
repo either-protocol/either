@@ -3,7 +3,7 @@ import FeaturedPrediction from '../components/FeaturedPrediction';
 
 const SAMPLE_PREDICTIONS = [
   {
-    imageUrl: '/aptos-apt-logo.png',
+    imageUrl: 'https://cdn.britannica.com/13/77413-050-95217C0B/Golden-Gate-Bridge-San-Francisco.jpg',
     question: 'Will Bitcoin reach $100k by end of 2024?',
     yesPercentage: 65,
     totalBetAmount: 1420,

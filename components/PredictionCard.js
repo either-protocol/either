@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import CountdownTimer from './CountdownTimer';
+import { FiBarChart2, FiClock } from 'react-icons/fi';
 
 export default function PredictionCard({ 
   imageUrl, 
@@ -51,11 +52,15 @@ export default function PredictionCard({
           </div>
         </div>
         
-        <div className="flex justify-between items-center">
-          <div className="text-sm text-gray-500">
-            ${totalBetAmount.toLocaleString()}
+        <div className="flex justify-between items-center mt-2">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-neutral-200 text-neutral-800 font-medium text-xs">
+            <FiBarChart2 className="text-indigo-500" />
+            <span>${totalBetAmount.toLocaleString()} Volume</span>
           </div>
-          <CountdownTimer endTime={endTime} />
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-neutral-200 text-neutral-800 font-medium text-xs">
+            <FiClock className="text-indigo-500" />
+            <span><CountdownTimer endTime={endTime} /></span>
+          </div>
         </div>
       </div>
     </div>
