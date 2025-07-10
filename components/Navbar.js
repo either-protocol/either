@@ -9,7 +9,13 @@ const initialLabels = [
   { id: 'crypto', name: 'Crypto' },
   { id: 'business', name: 'Business' },
   { id: 'stocks', name: 'Stocks' },
-  { id: 'sports', name: 'Sports' }
+  { id: 'sports', name: 'Sports' },
+  { id: 'politics', name: 'Politics' },
+  { id: 'entertainment', name: 'Entertainment' },
+  { id: 'technology', name: 'Technology' },
+  { id: 'science', name: 'Science' },
+  { id: 'health', name: 'Health' },
+  { id: 'business', name: 'Business' },
 ];
 
 export default function Navbar() {
