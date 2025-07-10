@@ -65,8 +65,8 @@ export default function Home() {
     <>
       <FeaturedPrediction prediction={SAMPLE_PREDICTIONS[0]} />
       
-      <div className="mx-auto py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="mx-auto py-8 px-4 sm:px-16 lg:px-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {SAMPLE_PREDICTIONS.map((prediction, index) => (
             <PredictionCard
               key={index}

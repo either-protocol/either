@@ -10,10 +10,10 @@ export default function PredictionCard({
   endTime 
 }) {
   return (
-    <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+    <div className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow h-full flex flex-col border border-neutral-200">
       <div className="flex items-start gap-4 mb-5">
         <div className="w-12 h-12 relative rounded-lg overflow-hidden flex-shrink-0">
-          <img
+          <Image
             src="/aptos-apt-logo.png"
             alt="Prediction thumbnail"
             fill
@@ -30,7 +30,7 @@ export default function PredictionCard({
         </div>
       </div>
       
-      <div>
+      <div className="mt-auto">
         <div className="flex gap-3 mb-4">
           <div className="flex-1">
             <button className="w-full py-3 px-5 rounded-md bg-[#EEF2FF] text-[#4F46E5] hover:bg-[#E0E7FF] transition-colors font-medium">

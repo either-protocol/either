@@ -23,11 +23,11 @@ export default function Navbar() {
   
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
-  };
+  }; 
 
   return (
-    <nav className="border-b sticky top-0 z-10 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center mt-4">
+    <nav className="border-b sticky top-0 z-10 bg-white px-4 sm:px-16 lg:px-24">
+      <div className="mx-auto px-4 flex justify-between items-center mt-4">
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-black hover:opacity-65 cursor-pointer borde" style={{ fontFamily: 'ITC Bauhaus Medium' }}>
                 either
