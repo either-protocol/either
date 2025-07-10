@@ -7,7 +7,7 @@ export default function EventDetails() {
   const { id } = router.query;
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-7 gap-8">
         {/* Main Content - Takes up 5 columns */}
         <div className="lg:col-span-5 space-y-6">

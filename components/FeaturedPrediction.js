@@ -3,7 +3,7 @@ import { FiArrowRight, FiClock, FiBarChart2 } from "react-icons/fi";
 
 export default function FeaturedPrediction({ prediction }) {
   return (
-    <div className="container mx-auto px-4 py-4">
+    <div className="mx-auto px-4 py-4">
 
       <Link href={`/event/${prediction.id}`} className="block">
         <div className="bg-white rounded-3xl shadow-lg hover:shadow-md transition-all border border-gray-100">

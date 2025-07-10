@@ -49,7 +49,7 @@ export default function Navbar() {
             </div>
 
       </div>
-      <div className="container mx-auto pt-4 py-2">
+      <div className="mx-auto pt-4 py-2">
         <div className="flex items-center gap-2 px-4 overflow-x-auto no-scrollbar">
           <button className="rounded-lg text-[15px] font-[510] whitespace-nowrap transition-all text-gray-800 tracking-wide">Trending</button>
         {initialLabels.map((label) => (
