@@ -33,7 +33,7 @@ export default function PredictionCard({
       <div className="mt-auto">
         <div className="flex gap-3 mb-4">
           <div className="flex-1">
-            <button className="w-full py-3 px-5 rounded-md bg-[#EEF2FF] text-[#4F46E5] hover:bg-[#E0E7FF] transition-colors font-medium">
+            <button className="w-full py-2 px-4 border-2 border-[#00203F] rounded-md bg-[#00203F] text-[#fff] hover:bg-[white] hover:text-[#00203F] transition-colors font-semibold">
               Yes
             </button>
             <div className="text-center mt-1.5 text-xs">
@@ -42,7 +42,7 @@ export default function PredictionCard({
             </div>
           </div>
           <div className="flex-1">
-            <button className="w-full py-3 px-5 rounded-md bg-[#F3E8FF] text-[#9333EA] hover:bg-[#EDE5FF] transition-colors font-medium">
+            <button className="w-full py-2 px-4 border-2 border-[#ADEFD1] rounded-md bg-[#ADEFD1] text-[#00203F] hover:bg-[white] hover:text-[#00203F] transition-colors font-semibold">
               No
             </button>
             <div className="text-center mt-1.5 text-xs">

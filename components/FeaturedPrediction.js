@@ -6,7 +6,7 @@ export default function FeaturedPrediction({ prediction }) {
     <div className="mx-auto px-4 sm:px-16 lg:px-24 py-4">
 
       <Link href={`/event/${prediction.id}`} className="block">
-        <div className="bg-white rounded-3xl shadow-lg hover:shadow-md transition-all border border-gray-100">
+        <div className="bg-white rounded-3xl shadow-md hover:shadow-md transition-all border border-gray-100">
           <div className="grid grid-cols-12 gap-8 p-8">
             {/* Left Section - Info */}
             <div className="col-span-5 space-y-8">
@@ -38,10 +38,10 @@ export default function FeaturedPrediction({ prediction }) {
 
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <button className="flex-1 px-7 py-3.5 rounded-md bg-neutral-900 text-white border border-neutral-900 font-semibold text-base transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-neutral-400/40">
+                  <button className="flex-1 px-7 py-3.5 border-2 border-[#00203F] rounded-md bg-[#00203F] text-[#fff] hover:shadow-md transition-colors font-semibold">
                     Yes
                   </button>
-                  <button className="flex-1 px-7 py-3.5 rounded-md bg-white to-neutral-100 text-neutral-700 border border-neutral-300 font-semibold text-base transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-neutral-200/40 ml-2">
+                  <button className="flex-1 px-7 py-3.5 border-2 border-[#ADEFD1] rounded-md bg-[#ADEFD1] text-[#00203F] hover:shadow-md transition-colors font-semibold">
                     No
                   </button>
                 </div>
