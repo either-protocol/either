@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import { FiArrowRight, FiClock, FiBarChart2 } from "react-icons/fi";
 
+const chartData = [
+  { date: '2024-01-01', value: 65 },
+  { date: '2024-01-15', value: 70 },
+  { date: '2024-02-01', value: 62 },
+  { date: '2024-02-15', value: 75 },
+  { date: '2024-03-01', value: 68 }
+];
+
+
 export default function FeaturedPrediction({ prediction }) {
   return (
     <div className="mx-auto px-4 sm:px-16 lg:px-24 py-4">
@@ -85,7 +94,7 @@ export default function FeaturedPrediction({ prediction }) {
                 </div>
               </div>
               <div className="h-[240px] bg-gray-50 rounded-xl">
-                {/* Chart component will go here */}
+             
               </div>
             </div>
           </div>
